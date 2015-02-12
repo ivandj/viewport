@@ -40,6 +40,10 @@
 
             if (stristr($ual, 'iphone'))    $uaX['device'] = 'iphone';
             if (stristr($ual, 'ipad'))      $uaX['device'] = 'ipad';
+            if (stristr($ual, 'windows phone') || stristr($ual, 'iemobile'))
+            {
+                $uaX['device'] = 'winphone';
+            }
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
